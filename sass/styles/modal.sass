@@ -1,0 +1,213 @@
+@media screen and (min-width: 1024px)
+    .available-services
+        .available-services_content
+            width: 70vw
+            .content-container_box
+                height: 50vh
+                padding: 20px
+                .available-services_btn
+                    width: 15px
+                    height: 25px
+                .text-container
+                    .text
+                        font-size: 4vw
+                    .name
+                        font-size: 3vw
+
+@media screen and (min-width: 1440px)
+    .available-services
+        .available-services_content
+            width: 55vw
+            .content-container_box
+                padding: 30px
+                .text-container
+                    .text
+                        font-size: 3vw
+                    .name
+                        font-size: 2.5vw
+
+    
+.available-services
+    width: 100vw
+    height: 100vh
+    position: fixed
+    box-sizing: border-box
+    z-index: 100
+    display: flex
+    justify-content: center
+    align-items: center
+    //Bg
+    .available-services_bg
+        background-color: #fff
+        width: 100%
+        height: 100%
+        position: absolute
+        z-index: 1
+        opacity: 0.7
+    //Content
+    .available-services_content
+        box-sizing: border-box
+        box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25)
+        background-color: #fff
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        z-index: 10
+        border-radius: 10px
+        //Content box
+        .content-container_box
+            width: 50%
+            display: flex
+            justify-content: space-between
+            align-items: center
+            box-sizing: border-box
+            //Btn
+            .available-services_btn
+                display: flex
+                justify-content: center
+                align-items: center
+                transition: 0.2s all
+                &:hover
+                    transform: scale(1.2, 1.2)
+                img
+                    width: 100%
+                    height: 100%
+            //Text container
+            .text-container
+                width: 95%
+                display: flex
+                flex-direction: column
+                align-items: center
+                flex-wrap: wrap
+                gap: 10px
+                box-sizing: border-box
+                //H
+                .text
+                    font-family: "Open Sans"
+                    font-weight: 400
+                    color: #fff
+                    text-transform: capitalize
+                    margin: 0
+                //Shape
+                .text-shape
+                    width: 35%
+                    height: 3px
+                    background-color: #fff
+                    border-radius: 10px
+                //Name
+                .name
+                    width: 100%
+                    font-family: "Open Sans"
+                    font-weight: 700
+                    color: #fff
+                    text-transform: capitalize
+                    margin: 0
+                    text-align: center
+            //Inner container
+            .box_inner-container
+                width: 100%
+                height: 100%
+                display: flex
+                flex-direction: column
+                box-sizing: border-box
+                padding: 10px
+                //Price
+                .price-container
+                    width: 100%
+                    height: auto
+                    display: flex
+                    justify-content: flex-end
+                    p
+                        font-family: "Open Sans"
+                        font-size: 16px
+                        font-weight: 500
+                        color: #000
+                        text-transform: capitalize
+                        span
+                            color: #01A8DF
+                            font-weight: 600
+                //Main text container
+                .main-text_container
+                    width: 100%
+                    height: auto
+                    display: flex
+                    flex-direction: column
+                    align-items: flex-start
+                    gap: 15px
+                    margin: 40px 0px 0px
+                    .main-text_container-row
+                        width: 100%
+                        height: auto
+                        display: flex
+                        justify-content: flex-start
+                        align-items: center
+                        gap: 10px
+                        .shape
+                            width: 15px
+                            height: 2px 
+                            background-color: #000
+                            border-radius: 15px
+                        p
+                            font-family: "Open Sans"
+                            font-size: 14px
+                            font-weight: 400
+                            color: #000
+                            text-align: left
+                //Button
+                .btn-container
+                    width: 100%
+                    height: auto
+                    display: flex
+                    justify-content: center
+                    margin: 50px 0px 0px
+                    button
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        box-sizing: border-box
+                        padding: 13px 17px
+                        background-color: #01A8DF
+                        box-shadow: 5px 5px 5px 5px rgba(1, 168, 223, 0.25)
+                        border-radius: 10px
+                        font-family: "Open Sans"
+                        font-size: 16px
+                        font-weight: 700
+                        text-transform: uppercase
+                        color: #fff
+                        transition: 0.2s all
+                        transform: scale(1, 1)
+                        &:hover
+                            transform: scale(1.1, 1.1)
+                //Paggination
+                .paggination-container
+                    width: 100%
+                    height: auto
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    gap: 15px
+                    box-sizing: border-box
+                    margin: 40px 0px 0px
+                    button
+                        width: 10px
+                        height: 10px
+                        background-color: #D9D9D9
+                        border-radius: 10px
+                        transition: 0.2s all
+                        border: none
+                        &:hover
+                            border: 1px solid #000
+                            transform: scale(1.2, 1.2)
+                    .paggination-btn_active
+                        background: #01A8DF
+                        box-shadow: 2px 2px 5px 1px rgba(1, 168, 223, 0.2)
+
+        //Bg
+        .content-container_box-bg
+            background-size: cover
+            background-position: center
+            border-radius: 10px 0px 0px 10px
+.available-hidden
+    display: none
+
